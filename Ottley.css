@@ -1,0 +1,439 @@
+/* Media Queries */
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+} /* If the viewport is 480 pixels wide or wider, the bakground color is lightgreen */
+
+@media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left:216px;}
+} /* Menu will float to the left of the page if the viewport is 480 pixels wide or wider, but if the viewport is less, than the menu will be on top of the content */
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    ul li a {
+        padding-left: 30px;
+        background: url(email-icon.png) left center no-repeat; /* 'email-icon.png' needs to change to material icons */
+    }
+} /* When the browser width is between 520 and 699px there will be an email icon next to each email link */
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    ul li a:before {
+        content: "Email: ";
+        font-style: italic;
+        color: #666666;
+    }
+} /* When the browser's width is between from 700 to 1000px, we will preface each email link with the text "Email: " */
+
+@media screen and (min-width: 1001px) {
+    ul li a:after {
+        content: " (" attr(data-email) ")";
+        font-size: 12px;
+        font-style: italic;
+        color: #666666;
+    }
+} /* When the browser's width is above 1001px, we will append the email address to the links. The value "data-" attributes the email address of the named person*/
+
+@media only screen and (min-width: 45em) {
+	body {max-width:58.75em /*940px*/;}
+	[role="banner"], .wrap {width: 100%;}
+	[role="main"] {float: left; width: 66% /*620px*/;}
+	[role="complementary"] {float: right; width: 32% /*300px*/; }
+}}
+
+/* Backgrounds */
+body {
+background: #faf5ee; color:#444;
+}
+
+h1 {
+}
+
+h2 {
+color:#999;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}
+
+div {
+}
+
+ul {
+}
+
+li {
+}
+
+header {
+}
+
+a:link {
+color:#DF3651;
+}
+
+a:hover {
+color: #DF3651;
+}
+
+a:visited {
+color: #000;
+}
+
+a:focus {
+}
+
+a:hover, a:active {
+}
+
+footer {
+color: #666;
+}
+
+/* Margins */
+body {
+margin: auto;
+}
+
+h1 {
+margin:.5em 0 0 0;
+}
+
+h2 {
+}
+
+h3 {
+margin:.5em 0 0 0;
+}
+
+h4 {
+margin:.3em 0 .5em 0;
+}
+
+p {
+}
+
+div {
+}
+
+ul {
+}
+
+li {
+margin: .6em 0;
+
+}
+
+header {
+}
+
+a:link {
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover, a:active {
+}
+/* Padding */
+body {
+padding: 2em;
+}
+
+h1 {
+padding-bottom: .2em;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}
+
+div {
+}
+
+ul {
+}
+
+li {
+
+}
+
+header {
+}
+
+a:link {
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover, a:active {
+}
+/* Height/Width */
+body {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}
+
+div {
+}
+
+ul {
+}
+
+li {
+
+}
+
+header {
+}
+
+a:link {
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover, a:active {
+}
+/* Text */
+body {
+line-height:1.4;
+text-align: left;
+}
+
+h1 {
+line-height:1;
+}
+
+h2 {
+text-transform: uppercase;
+letter-spacing: .05em;
+line-height:1;
+}
+
+h3 {
+line-height:1.2;
+}
+
+h4 {
+line-height:1.2;
+}
+
+p {
+}
+
+div {
+}
+
+ul {
+}
+
+li {
+
+}
+
+header {
+}
+
+a:link {
+text-decoration:none;
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
+a:focus {
+outline: thin dotted;
+}
+
+a:hover, a:active {
+}
+/* Fonts */
+body {
+font-family: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
+font-size: 100%; font-variant-ligatures: common-ligatures; font-weight: 400;
+}
+
+h1 {
+font-weight: 700;
+font-size:4em;
+}
+
+h2 {
+font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica , Arial, sans-serif;
+font-size:1.3em;
+font-weight: 400;
+}
+
+h3 {
+font-size:1.6em;
+font-weight: 700;
+}
+
+h4 {
+font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica , Arial, sans-serif;
+font-size:1.2em;
+}
+
+p {
+}
+
+div {
+}
+
+ul {
+}
+
+li {
+
+}
+
+header {
+}
+
+a:link {
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover, a:active {
+}
+
+footer {
+color: #666;
+}
+
+/* Icons */
+body {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}
+
+div {
+}
+
+ul {
+}
+
+li {
+
+}
+
+header {
+}
+
+a:link {
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover, a:active {
+}
+
+/* Images */
+
+img {
+max-width: 100%;
+}
+
+/* Classes */
+
+span.highlight {
+    background-color: yellow;
+}
+
+.kern {font-kerning: normal;}
+
+.alert {color: red;}
+
+.books {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: space-between;
+}
+			
+.book {
+padding-right: 1em;			
+flex:1;
+}
+
+
