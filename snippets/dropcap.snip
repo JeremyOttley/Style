@@ -19,7 +19,7 @@
 
 /* CSS3 Style */
 
-p:first-child:first-letter {
+p::first-child:first-letter {
   color: #903;
   float: left;
   font-family: Georgia;
@@ -35,3 +35,10 @@ p:first-child:first-letter {
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique lobortis orci ac lacinia. Fusce eu purus eget diam vehicula auctor nec eu elit. Morbi consequat facilisis orci vel malesuada. Donec ultrices molestie sollicitudin. Aliquam pharetra libero enim. Donec et suscipit massa. Donec dui odio, dignissim non sodales et, tincidunt a sapien. Phasellus elit nibh, adipiscing sed blandit vel, interdum et arcu.
 </p>
+
+/* initial-element style */
+p::first-child:first-letter {
+  color: #903; 
+  font-family: Georgia;
+  initial-letter: 2;
+}
