@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 480px) {
     body {
-        background-color: lightgreen;
+        background-color: #FFF8E7;
     }
 } /* If the viewport is 480 pixels wide or wider, the bakground color is lightgreen */
 
