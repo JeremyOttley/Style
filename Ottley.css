@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 /* Media Queries */
 
 @media screen and (min-width: 480px) {
@@ -47,32 +50,8 @@ body {
 background: #faf5ee; color:#444;
 }
 
-h1 {
-}
-
 h2 {
 color:#999;
-}
-
-h3 {
-}
-
-h4 {
-}
-
-p {
-}
-
-div {
-}
-
-ul {
-}
-
-li {
-}
-
-header {
 }
 
 a:link {
@@ -85,12 +64,6 @@ color: #DF3651;
 
 a:visited {
 color: #000;
-}
-
-a:focus {
-}
-
-a:hover, a:active {
 }
 
 footer {
@@ -106,9 +79,6 @@ h1 {
 margin:.5em 0 0 0;
 }
 
-h2 {
-}
-
 h3 {
 margin:.5em 0 0 0;
 }
@@ -117,37 +87,11 @@ h4 {
 margin:.3em 0 .5em 0;
 }
 
-p {
-}
-
-div {
-}
-
-ul {
-}
-
 li {
 margin: .6em 0;
 
 }
 
-header {
-}
-
-a:link {
-}
-
-a:hover {
-}
-
-a:visited {
-}
-
-a:focus {
-}
-
-a:hover, a:active {
-}
 /* Padding */
 body {
 padding: 2em;
@@ -157,91 +101,6 @@ h1 {
 padding-bottom: .2em;
 }
 
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-p {
-}
-
-div {
-}
-
-ul {
-}
-
-li {
-
-}
-
-header {
-}
-
-a:link {
-}
-
-a:hover {
-}
-
-a:visited {
-}
-
-a:focus {
-}
-
-a:hover, a:active {
-}
-/* Height/Width */
-body {
-}
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-p {
-}
-
-div {
-}
-
-ul {
-}
-
-li {
-
-}
-
-header {
-}
-
-a:link {
-}
-
-a:hover {
-}
-
-a:visited {
-}
-
-a:focus {
-}
-
-a:hover, a:active {
-}
 /* Text */
 body {
 line-height:1.4;
@@ -266,31 +125,10 @@ h4 {
 line-height:1.2;
 }
 
-p {
-}
-
-div {
-}
-
-ul {
-}
-
-li {
-
-}
-
-header {
-}
-
 a:link {
 text-decoration:none;
 }
 
-a:hover {
-}
-
-a:visited {
-}
 
 a:focus {
 outline: thin dotted;
@@ -325,87 +163,11 @@ font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica , Arial, sans-serif;
 font-size:1.2em;
 }
 
-p {
-}
-
-div {
-}
-
-ul {
-}
-
-li {
-
-}
-
-header {
-}
-
-a:link {
-}
-
-a:hover {
-}
-
-a:visited {
-}
-
-a:focus {
-}
-
-a:hover, a:active {
-}
 
 footer {
 color: #666;
 }
 
-/* Icons */
-body {
-}
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-p {
-}
-
-div {
-}
-
-ul {
-}
-
-li {
-
-}
-
-header {
-}
-
-a:link {
-}
-
-a:hover {
-}
-
-a:visited {
-}
-
-a:focus {
-}
-
-a:hover, a:active {
-}
 
 /* Images */
 
@@ -549,3 +311,15 @@ flex:1;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
 }
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
