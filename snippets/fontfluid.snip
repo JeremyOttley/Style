@@ -1,0 +1,14 @@
+/* Template to ensure that fonts scale based on screen size */
+
+body {
+  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+}
+
+/* Example: 
+
+if we want the our font size in a range where 14px is the minimum size at the smallest viewport width of 300px and where 26px is the maximum size at the largest viewport width of 1600px, then our equation looks like this:
+*/
+
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
