@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table tr:nth-child(even) {
+  background: #f8f8f8;  
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+}
+table th {
+  background: #999;
+  color: #fff;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <caption>User List</caption>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Created</th>
+      <th scope="col">Status</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Leonard Hofstadter</td>
+      <td>07/06/2016</td>
+      <td>Pending</td>
+      <td>lhofstadter@caltech.edu</td>
+    </tr>
+    <tr>
+      <td scope="row">Sheldon Cooper</td>
+      <td>07/01/2016</td>
+      <td>Active</td>
+      <td>scooper@@caltech.edu</td>
+    </tr>
+    <tr>
+      <td scope="row">Howard Wolowitz</td>
+      <td>06/05/2016</td>
+      <td>Inactive</td>
+      <td>hwolowitz@caltech.edu</td>
+    </tr>
+    <tr>
+      <td scope="row">Raj Koothrappali</td>
+      <td>06/20/2016</td>
+      <td>Active</td>
+      <td>rkoothrappali@caltech.edu</td>
+    </tr>
+    <tr>
+      <td scope="row">Penny</td>
+      <td>07/06/2016</td>
+      <td>Active</td>
+      <td>penny@cheesecakefactory.com</td>
+    </tr>
+    <tr>
+      <td scope="row">Bernadette Rostenkowski</td>
+      <td>07/05/2016</td>
+      <td>Pending</td>
+      <td>brostenkowski@caltech.edu</td>
+    </tr>
+    <tr>
+      <td scope="row">Amy Farrah Fowler</td>
+      <td>07/05/2016</td>
+      <td>Pending</td>
+      <td>afowler@caltech.edu</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
