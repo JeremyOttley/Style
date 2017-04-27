@@ -1,0 +1,101 @@
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",   "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  background-color: #fff;
+  color:#444;
+  
+}
+
+.author {font-size:1.3em; line-height:1;  padding:0; margin: 0; color:#999; font-weight: 400; text-transform: uppercase; letter-spacing: .05em;} 
+
+time, .location {color: #999; display: inline;}
+
+.container {display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-between;
+		}
+
+img, iframe, embed, object, video { width: 100%; }
+
+figure { display: block; padding: 1em 0; 
+				-webkit-margin-before: 0;
+				-webkit-margin-after: 0;
+				-webkit-margin-start: 0;
+				-webkit-margin-end: 0;
+				}
+		figure img {border: 1px solid #f1f1f1;}
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+*,
+*:before,
+*:after,
+p:first-letter,
+div:first-letter,
+blockquote:first-letter,
+li:first-letter,
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important; }
+
+p:last-child,
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0; }
+
+blockquote {
+  border: 0;
+  border-left: 5px solid #bbb;
+  margin-left: 1px;
+  padding: 12px 1.5rem; }
+  blockquote:first-child {
+    margin-top: 0; }
+  blockquote p:last-child,
+  blockquote ul:last-child,
+  blockquote ol:last-child {
+    margin-bottom: 0; }
+  blockquote footer {
+    display: block;
+    font-size: 80%; }
+
+hr {
+  border: 0;
+  border-bottom: 2px solid #bbb;
+  height: 0;
+  margin: 2.25rem 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+
