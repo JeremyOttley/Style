@@ -8,6 +8,8 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: 'Fira Code';
+    background-color: #fff;
+    color:#444;
 }
 
 h1, h3 {font-family: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;}
