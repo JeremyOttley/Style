@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+#vertical-center {
+  padding: 0;
+}
+#vertical-center li {
+  background: #cccccc;
+  width: 15em;
+  margin: 0.5em;
+  height: 5em;
+  text-align: center;
+  vertical-align: text-top;
+  display: inline-block;
+  /* non-flexbox browsers */
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+ 
+#flexible {
+  padding: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#flexible li {
+  background: #cccccc;
+  min-width: 12em;
+  margin: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex: 1 0;
+  flex: 1 0;
+}
+ 
+#reorder {
+  width: 100%;
+  /* fix for old Firefox */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+#reorder li:nth-child(even) {
+  background: #cccccc;
+  -webkit-order: 1;
+  order: 1;
+}
+ 
+#layout {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#layout header, #layout footer {
+  -webkit-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+#layout header {
+  background: #ffffcc;
+}
+#layout nav ul {
+  padding: 0;
+  margin: -0.5em;
+  min-width: 100%;
+  /* fix for old Firefox */
+  display: -webkit-flex;
+  display: flex;
+}
+#layout nav li {
+  background: #cccccc;
+  margin: 0.5em;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex: 1 1 30%;
+  flex: 1 1 30%;
+}
+#layout article {
+  -webkit-flex: 2 1 30em;
+  flex: 2 1 30em;
+}
+#layout aside {
+  flex: 1 0 15em;
+  background: #ccccff;
+}
+#layout footer {
+  background: #80ff80;
+}
+</style>
+<meta charset="utf-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<ul id='vertical-center'>
+  <li>One really long element that should wrap.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+  <li>Five</li>
+  <li>Six</li>
+</ul>
+<ul id='flexible'>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+  <li>Five</li>
+  <li>Six</li>
+</ul>
+<ul id='reorder'>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+  <li>Five</li>
+  <li>Six</li>
+</ul>
+<section id='layout'>
+  <header>
+    <h1>Header Title</h1>
+    <nav>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <h1>Another Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta elit vel ante hendrerit facilisis. Curabitur aliquam sollicitudin diam, id posuere elit consectetur nec. Vestibulum quam dolor, feugiat in posuere a, posuere imperdiet tellus.</p>
+  </article>
+  <aside>
+    <h1>Aside Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta elit vel ante hendrerit facilisis.</p>
+  </aside>
+  <footer>
+    <h1>Footer Title</h1>
+  </footer>
+</section>
+</body>
+</html>
