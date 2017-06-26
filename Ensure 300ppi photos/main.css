@@ -1,0 +1,8 @@
+html {
+  background: #333;
+}
+img {
+  margin: .5em 0;
+  display: block;
+  width: calc(var(--naturalWidth) * (96/300) * 1px);
+}
