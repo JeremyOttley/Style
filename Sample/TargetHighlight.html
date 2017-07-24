@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<style>
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  margin: 0; padding: 0;
+  font-family: sans-serif;
+  color: #999;
+}
+section {
+  padding: 5% 0;
+  margin: 0 auto;
+  max-width: 650px;
+  font-size: 20px;
+  line-height: 1.5em;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.highlight {
+  border-bottom: 2px solid #00ff00;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 255, 0, 0.3);
+  left: 0;
+  z-index: -1;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+</style>
+</head>
+<body>
+<section>
+Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, <a href="#">dignissim</a> sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. <a href="#">Maecenas</a> ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non <a href="#">fermentum</a> diam nisl sit amet erat. Duis semper. Duis arcu massa, <a href="#">scelerisque vitae</a>, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum <a href="#">bibendum</a> augue. Praesent egestas leo in pede. Praesent <a href="#">blandit</a> odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante <a href="#">ipsum</a> primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. <a href="#">Mauris</a> ac mauris sed pede pellentesque fermentum. Maecenas <a href="#">adipiscing</a> ante non diam sodales hendrerit.
+</section>
+</body>
+  <footer>
+  <script type="text/javascript">
+var link = document.querySelectorAll('a');
+var highlight = document.createElement('span');
+highlight.classList.add('highlight');
+document.body.append(highlight);
+
+function highlightLink() {
+  var linkCoords = this.getBoundingClientRect();
+ 
+  var coords = {
+    width: linkCoords.width,
+    height: linkCoords.height,
+    top: linkCoords.top + window.scrollY,
+    left: linkCoords.left + window.scrollX
+  };
+
+  highlight.style.width = `${coords.width}px`;
+  highlight.style.height = `${coords.height}px`;
+  highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
+}
+
+link.forEach(a => a.addEventListener('mouseenter', highlightLink));
+</script>
+  </footer>
+</html>
