@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Excel To HTML using codebeautify.org</title>
+		</head>
+		<body>
+			<!DOCTYPE html>
+			<html >
+				<head>
+					<meta charset="UTF-8">
+						<title>Pure CSS horizontal scroll tentative</title>
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+							<link rel="stylesheet" href="css/style.css">
+								<style>
+    .container {
+  position: fixed;
+  top: -30px;
+  left: 0;
+  width: 100vh;
+  height: calc(100vw);
+  overflow: scroll;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center calc(50vh);
+          transform-origin: center calc(50vh);
+}
+
+.child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em auto;
+  padding: 2em;
+  width: 500px;
+  height: 500px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: 1px solid #333;
+  box-shadow: 3px 3px 6px rgba(51, 51, 51, 0.3);
+  text-align: center;
+}
+.child p {
+  line-height: 1.5;
+}
+
+</style>
+							</head>
+							<body>
+								<div class="container">
+									<div class="content-wrapper">
+										<div class="child">
+											<h1>CSS-only horizontal scroll tentative</h1>
+											<p>The idea is to create an horizontal scroll layout and to allow the user to scroll up/down the mouse to scroll left/right.</p>
+											<p>Soâ€¦ please scroll 
+												<strong>down</strong> with your mouse.
+											</p>
+										</div>
+										<div class="child">
+											<h2>The trick</h2>
+											<p>Rotate -90deg the container, and 90deg its children blocks.</p>
+											<p>You have to fix container and children dimensions. :(</p>
+											<p>See CSS for rather correct positioning.</p>
+										</div>
+										<div class="child">
+											<h2>Desktop browsers</h2>
+											<p>Vertical scrollâ€¦Â scrolls. :)</p>
+											<p>But horizontal scroll (e.g. with a trackpad) doesnâ€™t. :(</p>
+										</div>
+										<div class="child">
+											<h2>Mobile browsers</h2>
+											<p>Only horizontal touchmove works on Chrome. :)</p>
+											<p>Only vertical touchmove works on Safari and Firefox. :(</p>
+										</div>
+										<div class="child">
+											<h2>Conclusion</h2>
+											<p>Without JavaScript: no good idea.</p>
+										</div>
+									</div>
+								</div>
+							</body>
+						</html>
+					</body>
+				</html>
