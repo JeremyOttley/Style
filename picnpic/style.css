@@ -1,0 +1,13 @@
+ img {
+     position:absolute;
+     left:294px;
+     top:230px;
+     border:1px solid grey;
+ }
+ div {
+     position:absolute;
+     left:0px;
+     top:0px;
+     width:400px;
+     height:300px;
+ }
