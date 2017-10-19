@@ -1,0 +1,67 @@
+<!-- Doctype HTML5 -->
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Page Title</title>
+<!-- Base URL to use for all relative URLs contained within the document -->
+<base href="https://example.com/page.html">
+<!-- Allows control over where resources are loaded from -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<!-- Name of web application (only should be used if the website is used as an app) -->
+<meta name="application-name" content="Application Name">
+<!-- Short description of the page (limit to 150 characters) -->
+<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
+<meta name="description" content="A description of the page">
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- Tells Google not to show the sitelinks search box -->
+<meta name="google" content="nositelinkssearchbox">
+<!-- Gives a general age rating based on sites content -->
+<meta name="rating" content="General">
+<meta name="geo.placename" content="Baltimore">
+
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* POST RESET CSS BELOW */
+
+@charset "UTF-8";.container,.qtip:before{box-shadow:0 1px 3px rgba(0,0,0,.3);text-align:center}.container,.qtip:before,h1.logo{text-align:center}h1.logo{font-family:helvetica,arial,sans-serif;font-size:24px;color:#fff;padding:64px 0 0;margin:0 auto;text-transform:uppercase;font-weight:400;letter-spacing:.3em;background:url(header.jpg) 50% 0 no-repeat}h2,h3{font-style:italic;margin-bottom:0;line-height:1}.list h1{color:#D78123}@font-face{font-family:Bazin;src:url(Fonts/Bazin.ttf)}@import url(https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,500,500i,700,700i);body{font-size:calc(9px + (26 - 14) * ((100vw - 300px)/ (1600 - 300)));font-family:Raleway,Bazin,serif;margin-left:auto;margin-right:auto;padding-left:12.5%;max-width:1400px;counter-reset:sidenote-counter}h1{margin-top:4rem;margin-bottom:1.5rem;line-height:1;font-weight:700}h2{margin-top:2.1rem;font-weight:600}h3{margin-top:2rem;font-weight:500}p{line-height:2rem;margin-top:1.4rem;margin-bottom:1.4rem;padding-right:0;vertical-align:baseline;font-weight:400}hr{display:block;height:1px;width:55%;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}.qtip.tip-bottom:before,.qtip.tip-left:before,.qtip.tip-right:before,.qtip.tip-top:before{box-sizing:border-box;border-radius:3px}p.thin{font-weight:200}p.ultralight{font-weight:100}@import url(https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,500,500i,700,700i);.qtip{display:inline-block;position:relative;cursor:pointer;color:#3bb4e5;border-bottom:.05em dotted #3bb4e5;box-sizing:border-box;font-style:normal;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out}.qtip:after,.qtip:before{position:absolute;opacity:0;visibility:hidden}.qtip:hover{color:#069;border-bottom:.05em dotted #069}.qtip:before{content:attr(data-tip);font-size:14px;background:rgba(10,20,30,.85);color:#fff;line-height:1.2em;padding:.5em;font-style:normal;min-width:120px;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;text-shadow:1px 1px 1px rgba(0,0,0,.5);font-family:sans-serif;letter-spacing:0;font-weight:600}.qtip:after{width:0;height:0;border-style:solid;content:'';-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.qtip:hover:after,.qtip:hover:before{visibility:visible;opacity:1}.qtip.tip-top:before{top:0;left:50%;-webkit-transform:translate(-50%,calc(-100% - 8px));transform:translate(-50%,calc(-100% - 8px))}.qtip.tip-top:after{border-width:8px 8px 0;border-color:rgba(10,20,30,.85) transparent transparent;top:-8px;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}.qtip.tip-bottom:before{bottom:0;left:50%;-webkit-transform:translate(-50%,calc(100% + 8px));transform:translate(-50%,calc(100% + 8px))}.qtip.tip-bottom:after{border-width:0 8px 8px;border-color:transparent transparent rgba(10,20,30,.85);bottom:-8px;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}.qtip.tip-left:before{left:0;top:50%;-webkit-transform:translate(calc(-100% - 8px),-50%);transform:translate(calc(-100% - 8px),-50%)}.qtip.tip-left:after{border-width:8px 0 8px 8px;border-color:transparent transparent transparent rgba(10,20,30,.85);left:-8px;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%)}.qtip.tip-right:before{right:0;top:50%;-webkit-transform:translate(calc(100% + 8px),-50%);transform:translate(calc(100% + 8px),-50%)}.qtip.tip-right:after{border-width:8px 8px 8px 0;border-color:transparent rgba(10,20,30,.85) transparent transparent;right:-8px;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%)}.container{padding:1.5em;margin:3em auto;background:#fff;position:relative;max-width:720px;font-size:calc(2vmin + 12px);line-height:1.5em}.container p{margin:0 auto .8em}pre code{color:#3bb4e5;font-size:.8em;font-family:Hack;padding:1em;background:#0a141e;display:block;text-align:left}.hl{color:#eb1777}.qcontent{color:#ff0;font-weight:700}.qclass{color:#dd0;font-weight:700}@media only screen and (min-width:601px){.container{width:85%}}@media only screen and (min-width:993px){.container{width:70%}}
+</style>
+</head>
+
+<body lang="en">
+<!--WEBSITE BEGINS HERE -->
+
+<header role="banner">
+<!-- CONTENT -->
+</header>
+
+<nav role="navigation">
+<!-- CONTENT -->
+</nav>
+
+<!-- CONTENT BEGINS HERE -->
+
+<main role="main">
+<!-- CONTENT -->
+<div class="container">
+
+</div>
+</main>
+
+<footer>
+<!-- CONTENT -->
+</footer>
+<!-- WEBSITE ENDS HERE -->
+</body>
+</html>
+#https://github.com/thedaviddias/Front-End-Checklist
