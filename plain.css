@@ -1,0 +1,18 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    html {
+        font-size: 140% !important;
+    }
+    body {
+        width: 100% !important;
+        padding: 1em !important;
+    }
+    p {
+        text-align: justify;
+    }
+    #table-of-contents {
+        display: none;
+    }
+}
