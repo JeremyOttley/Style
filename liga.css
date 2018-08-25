@@ -8,6 +8,10 @@ body {
     font-feature-settings: 'frac' 1;
     font-feature-settings: 'ordn' 1;
     font-feature-settings: 'zero' 1;
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    font-feature-settings: "kern";
 }
 
 @supports (font-variant-ligatures: common-ligatures) {
