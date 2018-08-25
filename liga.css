@@ -165,3 +165,7 @@ table td {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+blockquote { 
+    font-size: larger 
+}
