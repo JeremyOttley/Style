@@ -8,10 +8,6 @@ body {
     font-feature-settings: 'frac' 1;
     font-feature-settings: 'ordn' 1;
     font-feature-settings: 'zero' 1;
-    font-kerning: normal;
-    -moz-font-feature-settings: "kern";
-    -webkit-font-feature-settings: "kern";
-    font-feature-settings: "kern";
 }
 
 @supports (font-variant-ligatures: common-ligatures) {
@@ -133,4 +129,39 @@ pre code {
     background: #0a141e;
     display: block;
     text-align: left
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table tr:nth-child(even) {
+  background: #f8f8f8;  
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+}
+table th {
+  background: #999;
+  color: #fff;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
