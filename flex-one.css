@@ -1,0 +1,32 @@
+    /* This is all the CSS: */
+     
+     .main{display: flex; flex-flow: row wrap;  width: 80%; margin: 0 auto}
+
+     .fluid{flex:1}
+
+     .clear{width: 100%}
+     
+     
+
+    /* Just add any number of .fluid columns like this: */
+
+    /* Two Columns
+
+    <div class="fluid"></div>
+    <div class="fluid"></div>
+    <div class="clear"></div> */
+
+    /* Three Columns
+
+    <div class="fluid"></div>
+    <div class="fluid"></div>
+    <div class="fluid"></div>
+    <div class="clear"></div> */
+
+    /* Four Columns
+
+    <div class="fluid"></div>
+    <div class="fluid"></div>
+    <div class="fluid"></div>
+    <div class="fluid"></div>
+    <div class="clear"></div> */
