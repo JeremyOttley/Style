@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300');
 body {
   font-family: 'Fira Sans', sans-serif;
+  font-feature-settings: "liga" 1;
+  font-feature-settings: 'frac' 1;
+  font-feature-settings: 'ordn' 1;
+  font-feature-settings: 'zero' 1;
   line-height: 1.6;
   color: #222;
   max-width: 40rem;
@@ -8,6 +12,18 @@ body {
   margin: auto;
   background: #fafafa;
 }
+
+@supports (font-variant-ligatures: common-ligatures) {
+    body {
+        font-feature-settings: normal;
+        font-variant-ligatures: common-ligatures;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-variant-numeric: diagonal-fractions;
+        font-variant-numeric: ordinal;
+        font-variant-numeric: slashed-zero;
+    }
+}
+
 
 img {
   max-width: 100%;
