@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    font-feature-settings: "liga" 1;
+    font-feature-settings: 'frac' 1;
+    font-feature-settings: 'ordn' 1;
+    font-feature-settings: 'zero' 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5%;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+    font-size: calc(9px + (26 - 14) * ((100vw - 300px)/ (1600 - 300)));
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #566b78;
+}
+
+@supports (font-variant-ligatures: common-ligatures) {
+    body {
+        font-feature-settings: normal;
+        font-variant-ligatures: common-ligatures;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-variant-numeric: diagonal-fractions;
+        font-variant-numeric: ordinal;
+        font-variant-numeric: slashed-zero;
+    }
+}
+
+main {
+  max-width: 38rem;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+h1 {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    font-weight: 700
+    color: #333;
+}
+
+h2 {
+    margin-top: 2.1rem;
+    font-weight: 600;
+    color: #333;
+    padding-top: 1em;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-weight: 500
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+footer {
+    background-color: #F8F8F8;
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+    padding:20px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header {
+  grid-column: span 12;
+}
+.navigation-menu {
+  grid-column: span 4;
+}
+.main-content {
+  grid-column: span 8;
+}
+.footer {
+  grid-column: span 12;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu {
+    grid-column: span 6;
+  }
+  .main-content {
+    grid-column: span 6;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigation-menu {
+    grid-row: 1;
+    grid-column: span 12;
+  }
+  .main-content {
+    grid-column: span 12;
+  }
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+  border-left: 2px solid #69c;
+}
+
+a {
+  color: #e81c4f;
+}
+
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table tr:nth-child(even) {
+  background: #f8f8f8;  
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+}
+table th {
+  background: #999;
+  color: #fff;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+blockquote { 
+    font-size: larger 
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    html {
+        font-size: 140% !important;
+    }
+    body {
+        width: 100% !important;
+        padding: 1em !important;
+    }
+    p {
+        text-align: justify;
+    }
+    #table-of-contents {
+        display: none;
+    }
+}
+
+header {
+  background-color: #263d36;
+  background-image: url("https://images.unsplash.com/photo-1464013778555-8e723c2f01f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background:  #e81c4f;
+  color: white;
+}
