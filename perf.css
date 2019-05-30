@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/ssa1tke.css");
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+body {
+    font-family: "freight-sans-pro",sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5%;
+    max-width: 1400px;
+    counter-reset: sidenote-counter
+    font-feature-settings: "liga" 1;
+    font-feature-settings: 'frac' 1;
+    font-feature-settings: 'ordn' 1;
+    font-feature-settings: 'zero' 1;
+}
+
+@supports (font-variant-ligatures: common-ligatures) {
+    body {
+        font-feature-settings: normal;
+        font-variant-ligatures: common-ligatures;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-variant-numeric: diagonal-fractions;
+        font-variant-numeric: ordinal;
+        font-variant-numeric: slashed-zero;
+    }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+h1 {
+    page-break-before: always
+}
+
+h1,h2,h3,h4,h5,h6 {
+    page-break-after: avoid;
+}
+
+h1 {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    font-weight: 700
+}
+
+h2 {
+    margin-top: 2.1rem;
+    font-weight: 600
+}
+
+h3 {
+    margin-top: 2rem;
+    font-weight: 500
+}
+
+p {
+    line-height: 2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+    font-weight: 400
+}
+
+p.thin {
+    font-weight: 200
+}
+
+p.ultralight {
+    font-weight: 100
+}
+
+blockquote { 
+    font-size: larger 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+li a {
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 2em;
+}
+
+pre code {
+  font: 16px/1.5 'Fira Code', monospace;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.tip {
+    font-size: 1.6em;
+    float: right;
+    max-width: 66%;
+    margin: 0.5em 0 0.5em 1em;
+    line-height: 1.6;
+    color: #ccc;
+    text-align: right;
+}
+
+#TOC {
+    page-break-after: always;
+}
+
+.sourceCode {
+    page-break-inside: avoid;
+}
+
+/* */
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table tr:nth-child(even) {
+  background: #f8f8f8;  
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+}
+table th {
+  background: #999;
+  color: #fff;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+footer {
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 12px;
+  right: 16px;
+  z-index: 1;
+  background: white;
+  color: #999;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 5px;
+  opacity: .8;
+}
