@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300');
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto:500|Work+Sans&display=swap');
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-feature-settings: "liga" 1;
   font-feature-settings: 'frac' 1;
   font-feature-settings: 'ordn' 1;
@@ -29,11 +30,22 @@ img {
   max-width: 100%;
 }
 a {
-  color: #2ECC40;
+  color: #236ECE;
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 h1, h2, strong {
   color: #111;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+pre, code {
+  font-family: 'Fira Code', monospace;
 }
 
 blockquote {
@@ -76,3 +88,4 @@ table td {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
